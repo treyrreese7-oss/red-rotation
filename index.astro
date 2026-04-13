@@ -1,0 +1,23 @@
+---
+import Nav from '../components/Nav.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Nav />
+<Header />
+
+<main>
+  <h2>Hello, my name is Trey 👋</h2>
+  <p>This is my first Astro website!</p>
+
+  <button id="btn">Click me</button>
+</main>
+
+<Footer />
+
+<script>
+  document.getElementById('btn').addEventListener('click', () => {
+    alert('JS is working!');
+  });
+</script>
